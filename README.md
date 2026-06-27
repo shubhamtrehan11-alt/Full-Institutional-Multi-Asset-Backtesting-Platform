@@ -1,113 +1,188 @@
-# Visualization Dashboard Components
-
-## 1. Strategy Performance Tear Sheet
-
-This multi-panel plot offers a detailed look at the strategy's overall performance.
-
-### Components
-
-* **Cumulative Portfolio Value vs. Benchmark**
-
-  * Shows the growth of the strategy's equity curve against a chosen benchmark (e.g., SPY).
-  * Highlights periods of outperformance or underperformance.
-
-* **Drawdown (%)**
-
-  * Visualizes the percentage decline from peak equity.
-  * Illustrates both the magnitude and duration of drawdowns.
-  * Clearly identifies the maximum drawdown.
-
-* **Rolling 12-Month Sharpe Ratio**
-
-  * Displays the strategy's risk-adjusted returns over a 12-month rolling window.
-  * Helps assess consistency of performance.
-
-* **Rolling 3-Month Realized Volatility**
-
-  * Shows the annualized standard deviation of daily returns over a 3-month rolling window.
-  * Represents the strategy's short-term volatility.
-
-* **Return Distribution**
-
-  * A histogram of daily returns, often overlaid with a normal distribution.
-  * Used to assess the normality and symmetry of returns.
-
-* **Monthly Returns**
-
-  * A bar chart displaying monthly returns.
-  * Positive returns are typically shown in green, while negative returns are shown in red.
-
-* **Key Statistics**
-
-  * A summary table containing essential performance metrics, including:
-
-    * Annual Return
-    * Annual Volatility
-    * Sharpe Ratio
-    * Maximum Drawdown
-    * Alpha
-    * Beta
-    * Additional risk and return statistics
-
-* **Strategy vs. Benchmark Scatter Plot**
-
-  * Compares daily strategy returns against benchmark returns.
-  * Often includes a regression line to visualize their relationship.
-
-* **Q-Q Plot (Normal)**
-
-  * Compares the distribution of strategy returns to a theoretical normal distribution.
-  * Useful for identifying skewness and fat tails.
+# 📊 Visualization Dashboard Components
 
 ---
 
-## 2. Monthly Returns Heat Map
+# 1️⃣ Strategy Performance Tear Sheet
 
-This visualization presents a calendar-style heat map of monthly returns.
+> A comprehensive overview of the strategy's performance, risk, and return characteristics.
+
+## 🔹 Components
+
+### **📈 Cumulative Portfolio Value vs. Benchmark**
+
+* Shows the growth of the strategy's equity curve versus a benchmark (e.g., SPY).
+
+* Highlights periods of outperformance and underperformance.
+
+---
+
+### **📉 Drawdown (%)**
+
+* Visualizes declines from previous portfolio peaks.
+
+* Illustrates both:
+
+  * Magnitude of losses
+
+  * Duration of drawdowns
+
+* Clearly identifies the **maximum drawdown**.
+
+---
+
+### **⚖️ Rolling 12-Month Sharpe Ratio**
+
+* Measures risk-adjusted returns over a rolling 12-month window.
+
+* Helps evaluate the consistency of strategy performance.
+
+---
+
+### **🌪️ Rolling 3-Month Realized Volatility**
+
+* Displays annualized volatility based on the previous three months of returns.
+
+* Represents short-term portfolio risk.
+
+---
+
+### **📊 Return Distribution**
+
+* Histogram of daily returns.
+
+* Often includes a fitted normal distribution.
+
+* Useful for evaluating:
+
+  * Normality
+
+  * Skewness
+
+  * Fat tails
+
+---
+
+### **📅 Monthly Returns**
+
+* Bar chart of monthly performance.
+
+* Typically:
+
+  * 🟢 Green = Positive Return
+
+  * 🔴 Red = Negative Return
+
+---
+
+### **📝 Key Statistics**
+
+A summary table containing important performance metrics, including:
+
+* Annual Return
+
+* Annual Volatility
+
+* Sharpe Ratio
+
+* Maximum Drawdown
+
+* Alpha
+
+* Beta
+
+* Additional risk and return measures
+
+---
+
+### **🔄 Strategy vs. Benchmark Scatter Plot**
+
+* Compares daily strategy returns to benchmark returns.
+
+* Frequently includes a regression line.
+
+* Helps visualize market sensitivity and beta exposure.
+
+---
+
+### **📐 Q-Q Plot (Normal)**
+
+* Compares portfolio returns against a theoretical normal distribution.
+
+* Useful for identifying:
+
+  * Skewness
+
+  * Kurtosis
+
+  * Fat-tail risk
+
+---
+
+# 2️⃣ Monthly Returns Heat Map
+
+> Calendar-style visualization of monthly performance.
+
+## 🔹 Features
 
 * Each cell represents a single month.
-* Colors indicate positive (green) or negative (red) performance.
-* Allows quick identification of:
 
-  * Strong and weak periods
-  * Seasonal patterns
+* Colors indicate positive or negative returns.
+
+* Enables quick identification of:
+
+  * Strong periods
+
+  * Weak periods
+
+  * Seasonality
+
   * Year-to-date (YTD) performance
 
 ---
 
-## 3. Sector Exposure Over Time
+# 3️⃣ Sector Exposure Over Time
 
-This stacked area chart illustrates how portfolio allocations across sectors evolve throughout the backtest period.
+> Stacked area chart showing changes in portfolio allocations across sectors.
 
-The chart provides insight into:
+## 🔹 Insights Provided
 
 * Thematic portfolio bets
-* Sector concentration risks
+
+* Sector concentration risk
+
 * Dynamic rebalancing behavior
-* Changes in diversification over time
+
+* Portfolio diversification trends
 
 ---
 
-## 4. Factor Information Coefficient (IC) Analysis
+# 4️⃣ Factor Information Coefficient (IC) Analysis
 
-This visualization evaluates the predictive power of the alpha factors.
+> Evaluates the predictive power of alpha factors.
 
-### Components
+## 🔹 Components
 
-* **IC Time Series**
+### **📊 IC Time Series**
 
-  * A bar chart showing the Information Coefficient (IC) for each rebalancing period.
-  * Measures the correlation between factor rankings and subsequent returns.
+* Bar chart displaying Information Coefficients for each rebalance period.
 
-* **Rolling 12-Month Mean IC**
+* Measures the relationship between factor rankings and future returns.
 
-  * Displays the moving average of the IC.
-  * Reveals trends in factor effectiveness over time.
+---
 
-* **IC Distribution**
+### **📈 Rolling 12-Month Mean IC**
 
-  * A histogram of IC values.
-  * Used to calculate metrics such as the Information Ratio (IR):
+* Moving average of IC values.
+
+* Reveals whether factor effectiveness is improving or deteriorating.
+
+---
+
+### **📉 IC Distribution**
+
+* Histogram of historical IC values.
+
+* Used to calculate the Information Ratio:
 
 [
 IR = \frac{\text{Mean IC}}{\text{Standard Deviation of IC}}
@@ -115,61 +190,84 @@ IR = \frac{\text{Mean IC}}{\text{Standard Deviation of IC}}
 
 ---
 
-## 5. Transaction Cost Attribution
+# 5️⃣ Transaction Cost Attribution
 
-This dashboard provides a detailed breakdown of trading costs incurred by the strategy.
+> Breaks down trading costs incurred during portfolio rebalancing.
 
-### Components
+## 🔹 Components
 
-* **Total Cost per Rebalance (bps)**
+### **💵 Total Cost per Rebalance (bps)**
 
-  * Shows total transaction costs incurred during each rebalance event.
-
-* **Cost Breakdown by Component (bps)**
-
-  * A stacked bar chart attributing costs to:
-
-    * Commissions
-    * Bid-Ask Spread
-    * Market Impact
-
-* **One-Way Portfolio Turnover (%)**
-
-  * Visualizes the percentage of the portfolio traded during each rebalance.
-
-* **Cumulative Transaction Cost Drag**
-
-  * Displays the accumulated dollar cost of trading throughout the backtest.
-  * Demonstrates the long-term impact of market frictions.
+* Total trading costs incurred at each rebalance event.
 
 ---
 
-## 6. Risk Analysis Dashboard
+### **🧩 Cost Breakdown by Component (bps)**
 
-This multi-panel dashboard summarizes the portfolio's risk characteristics.
+Costs are decomposed into:
 
-### Components
+* Commission
 
-* **Risk Decomposition**
+* Bid-Ask Spread
 
-  * A bar chart separating total portfolio variance into:
+* Market Impact
 
-    * Systematic (factor) risk
-    * Idiosyncratic (specific) risk
-  * Often expressed as percentages of total variance.
+---
 
-* **Historical Stress Test Results**
+### **🔄 One-Way Portfolio Turnover (%)**
 
-  * Simulates portfolio performance during historical market crises, such as:
+* Percentage of portfolio holdings traded during each rebalance.
 
-    * Global Financial Crisis (2008)
-    * COVID-19 Market Crash
-  * Assesses resilience during extreme market conditions.
+---
 
-* **Value-at-Risk (VaR) and Conditional Value-at-Risk (CVaR) Estimates**
+### **📉 Cumulative Transaction Cost Drag**
 
-  * Compares different risk estimation methods, including:
+* Running total of trading costs over the entire backtest.
 
-    * Parametric VaR
-    * Historical Simulation VaR
-  * Quantifies potential losses at specified confidence levels.
+* Demonstrates the long-term impact of market friction.
+
+---
+
+# 6️⃣ Risk Analysis Dashboard
+
+> Comprehensive overview of portfolio risk exposures.
+
+## 🔹 Components
+
+### **🛡️ Risk Decomposition**
+
+Breaks total portfolio variance into:
+
+* Systematic (Factor) Risk
+
+* Idiosyncratic (Specific) Risk
+
+Typically displayed as percentages of total variance.
+
+---
+
+### **⚠️ Historical Stress Test Results**
+
+Evaluates hypothetical portfolio performance during major crises, including:
+
+* 2008 Global Financial Crisis
+
+* COVID-19 Market Crash
+
+* Other historical stress periods
+
+---
+
+### **📉 VaR / CVaR Estimates**
+
+Compares multiple downside risk methodologies, such as:
+
+* Parametric VaR
+
+* Historical Simulation VaR
+
+* Conditional VaR (CVaR)
+
+Quantifies potential losses at selected confidence levels.
+
+---
