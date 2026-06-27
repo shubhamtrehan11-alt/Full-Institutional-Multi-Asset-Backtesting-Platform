@@ -29,7 +29,6 @@ IC Distribution: A histogram of IC values, often used to calculate metrics like 
 
 5. Transaction Cost Attribution
 This dashboard provides a breakdown of transaction costs incurred by the strategy:
-
 Total Cost per Rebalance (bps): Shows the total transaction costs in basis points for each rebalancing event.
 Cost Breakdown by Component (bps): A stacked bar chart attributing costs to commission, bid-ask spread, and market impact.
 One-Way Portfolio Turnover (%): Visualizes the percentage of the portfolio traded during each rebalance.
@@ -38,7 +37,6 @@ Cumulative Transaction Cost Drag: Displays the accumulated dollar cost of tradin
 
 6. Risk Analysis Dashboard
 This multi-panel plot summarizes various risk aspects of the portfolio:
-
 Risk Decomposition: A bar chart breaking down the portfolio's total variance into systematic (factor) risk and idiosyncratic risk, often as a percentage of total variance.
 Historical Stress Test Results: Presents the hypothetical performance of the current portfolio under various historical market crises (e.g., GFC 2008, COVID Crash), indicating resilience to extreme events.
 VaR / CVaR Estimates (Daily %): Compares different Value-at-Risk (VaR) and Conditional Value-at-Risk (CVaR) estimates (e.g., parametric vs. historical simulation), quantifying potential losses at specified confidence levels# Full-Institutional-Multi-Asset-Backtesting-Platform
