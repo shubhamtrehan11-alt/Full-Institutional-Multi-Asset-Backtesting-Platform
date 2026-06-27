@@ -2,38 +2,39 @@
 
 This multi-panel plot offers a detailed look at the strategy's overall performance. It includes:
 
-Cumulative Portfolio Value vs Benchmark: 
+**Cumulative Portfolio Value vs Benchmark:** 
 
 Shows the growth of the strategy's equity curve against a chosen benchmark (e.g., SPY), highlighting periods of outperformance or underperformance.
 
-Drawdown (%): 
+**Drawdown (%):** 
 
 Visualizes the percentage decline from peak equity, illustrating the magnitude and duration of drawdowns, with a clear marker for the maximum drawdown.
 
-Rolling 12M Sharpe Ratio: 
+**Rolling 12M Sharpe Ratio:** 
 
 Displays the strategy's risk-adjusted returns over a 12-month rolling window, indicating consistency of performance.
 
-Rolling 3M Realized Vol:
+**Rolling 3M Realized Vol:**
 
 Shows the annualized standard deviation of daily returns over a 3-month rolling window, representing the strategy's short-term volatility.
 
-Return Distribution: 
+**Return Distribution:** 
 
 A histogram of daily returns, often overlaid with a normal distribution, to assess the normality and symmetry of returns.
-Monthly Returns: 
+
+**Monthly Returns:** 
 
 A bar chart displaying monthly returns, color-coded to indicate positive (green) or negative (red) performance.
 
-Key Statistics: 
+**Key Statistics:** 
 
 A table summarizing essential performance metrics such as annual return, volatility, Sharpe ratio, maximum drawdown, alpha, beta, and more.
 
-Strategy vs Benchmark Scatter: 
+**Strategy vs Benchmark Scatter:** 
 
 A scatter plot comparing daily returns of the strategy against the benchmark, often including a regression line to show their relationship.
 
-Q-Q Plot (Normal):
+**Q-Q Plot (Normal):**
 
 A quantile-quantile plot comparing the distribution of strategy returns to a theoretical normal distribution, useful for identifying fat tails or skewness.
 
@@ -53,15 +54,15 @@ This stacked area chart illustrates how the portfolio's allocation to different 
 
 This plot is crucial for evaluating the predictive power of the alpha factors. It typically includes:
 
-IC Time Series:
+**IC Time Series:**
 
 A bar chart showing the Information Coefficient (IC) for each rebalancing period, indicating the correlation between factor ranks and future returns.
 
-Rolling 12M Mean IC: 
+**Rolling 12M Mean IC:** 
 
 Displays the moving average of the IC, revealing trends in factor efficacy.
 
-IC Distribution: 
+**IC Distribution:** 
 
 A histogram of IC values, often used to calculate metrics like the Information Ratio (IR = mean IC / std IC).
 
@@ -70,19 +71,19 @@ A histogram of IC values, often used to calculate metrics like the Information R
 
 This dashboard provides a breakdown of transaction costs incurred by the strategy:
 
-Total Cost per Rebalance (bps): 
+**Total Cost per Rebalance (bps):** 
 
 Shows the total transaction costs in basis points for each rebalancing event.
 
-Cost Breakdown by Component (bps):
+**Cost Breakdown by Component (bps):**
 
 A stacked bar chart attributing costs to commission, bid-ask spread, and market impact.
 
-One-Way Portfolio Turnover (%): 
+**One-Way Portfolio Turnover (%):** 
 
 Visualizes the percentage of the portfolio traded during each rebalance.
 
-Cumulative Transaction Cost Drag:
+**Cumulative Transaction Cost Drag:**
 
 Displays the accumulated dollar cost of trading over the entire backtesting period, demonstrating the total impact of friction.
 
