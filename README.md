@@ -52,23 +52,53 @@ This stacked area chart illustrates how the portfolio's allocation to different 
 4. Factor Information Coefficient (IC) Analysis
 
 This plot is crucial for evaluating the predictive power of the alpha factors. It typically includes:
-IC Time Series: A bar chart showing the Information Coefficient (IC) for each rebalancing period, indicating the correlation between factor ranks and future returns.
-Rolling 12M Mean IC: Displays the moving average of the IC, revealing trends in factor efficacy.
-IC Distribution: A histogram of IC values, often used to calculate metrics like the Information Ratio (IR = mean IC / std IC).
+
+IC Time Series:
+
+A bar chart showing the Information Coefficient (IC) for each rebalancing period, indicating the correlation between factor ranks and future returns.
+
+Rolling 12M Mean IC: 
+
+Displays the moving average of the IC, revealing trends in factor efficacy.
+
+IC Distribution: 
+
+A histogram of IC values, often used to calculate metrics like the Information Ratio (IR = mean IC / std IC).
 
 
 5. Transaction Cost Attribution
 
 This dashboard provides a breakdown of transaction costs incurred by the strategy:
-Total Cost per Rebalance (bps): Shows the total transaction costs in basis points for each rebalancing event.
-Cost Breakdown by Component (bps): A stacked bar chart attributing costs to commission, bid-ask spread, and market impact.
-One-Way Portfolio Turnover (%): Visualizes the percentage of the portfolio traded during each rebalance.
-Cumulative Transaction Cost Drag: Displays the accumulated dollar cost of trading over the entire backtesting period, demonstrating the total impact of friction.
+
+Total Cost per Rebalance (bps): 
+
+Shows the total transaction costs in basis points for each rebalancing event.
+
+Cost Breakdown by Component (bps):
+
+A stacked bar chart attributing costs to commission, bid-ask spread, and market impact.
+
+One-Way Portfolio Turnover (%): 
+
+Visualizes the percentage of the portfolio traded during each rebalance.
+
+Cumulative Transaction Cost Drag:
+
+Displays the accumulated dollar cost of trading over the entire backtesting period, demonstrating the total impact of friction.
 
 
 6. Risk Analysis Dashboard
 
 This multi-panel plot summarizes various risk aspects of the portfolio:
-Risk Decomposition: A bar chart breaking down the portfolio's total variance into systematic (factor) risk and idiosyncratic risk, often as a percentage of total variance.
-Historical Stress Test Results: Presents the hypothetical performance of the current portfolio under various historical market crises (e.g., GFC 2008, COVID Crash), indicating resilience to extreme events.
-VaR / CVaR Estimates (Daily %): Compares different Value-at-Risk (VaR) and Conditional Value-at-Risk (CVaR) estimates (e.g., parametric vs. historical simulation), quantifying potential losses at specified confidence levels# Full-Institutional-Multi-Asset-Backtesting-Platform
+
+Risk Decomposition: 
+
+A bar chart breaking down the portfolio's total variance into systematic (factor) risk and idiosyncratic risk, often as a percentage of total variance.
+
+Historical Stress Test Results: 
+
+Presents the hypothetical performance of the current portfolio under various historical market crises (e.g., GFC 2008, COVID Crash), indicating resilience to extreme events.
+
+VaR / CVaR Estimates (Daily %):
+
+Compares different Value-at-Risk (VaR) and Conditional Value-at-Risk (CVaR) estimates (e.g., parametric vs. historical simulation), quantifying potential losses at specified confidence levels# Full-Institutional-Multi-Asset-Backtesting-Platform
