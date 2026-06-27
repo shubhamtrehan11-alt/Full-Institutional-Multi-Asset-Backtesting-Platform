@@ -10,6 +10,8 @@ Monthly Returns: A bar chart displaying monthly returns, color-coded to indicate
 Key Statistics: A table summarizing essential performance metrics such as annual return, volatility, Sharpe ratio, maximum drawdown, alpha, beta, and more.
 Strategy vs Benchmark Scatter: A scatter plot comparing daily returns of the strategy against the benchmark, often including a regression line to show their relationship.
 Q-Q Plot (Normal): A quantile-quantile plot comparing the distribution of strategy returns to a theoretical normal distribution, useful for identifying fat tails or skewness.
+
+
 2. Monthly Returns Heat Map
 This plot presents a calendar-style heat map of monthly returns. Each cell represents a month, with colors indicating positive (green) or negative (red) performance. This visual allows for quick identification of strong and weak periods, as well as annual (YTD) performance.
 
