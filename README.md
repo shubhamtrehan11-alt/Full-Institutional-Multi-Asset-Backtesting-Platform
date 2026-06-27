@@ -1,15 +1,24 @@
 1. Strategy Performance Tear Sheet
 
 This multi-panel plot offers a detailed look at the strategy's overall performance. It includes:
-Cumulative Portfolio Value vs Benchmark: Shows the growth of the strategy's equity curve against a chosen benchmark (e.g., SPY), highlighting periods of outperformance or underperformance.
-Drawdown (%): Visualizes the percentage decline from peak equity, illustrating the magnitude and duration of drawdowns, with a clear marker for the maximum drawdown.
-Rolling 12M Sharpe Ratio: Displays the strategy's risk-adjusted returns over a 12-month rolling window, indicating consistency of performance.
-Rolling 3M Realized Vol: Shows the annualized standard deviation of daily returns over a 3-month rolling window, representing the strategy's short-term volatility.
-Return Distribution: A histogram of daily returns, often overlaid with a normal distribution, to assess the normality and symmetry of returns.
-Monthly Returns: A bar chart displaying monthly returns, color-coded to indicate positive (green) or negative (red) performance.
-Key Statistics: A table summarizing essential performance metrics such as annual return, volatility, Sharpe ratio, maximum drawdown, alpha, beta, and more.
-Strategy vs Benchmark Scatter: A scatter plot comparing daily returns of the strategy against the benchmark, often including a regression line to show their relationship.
-Q-Q Plot (Normal): A quantile-quantile plot comparing the distribution of strategy returns to a theoretical normal distribution, useful for identifying fat tails or skewness.
+Cumulative Portfolio Value vs Benchmark: 
+Shows the growth of the strategy's equity curve against a chosen benchmark (e.g., SPY), highlighting periods of outperformance or underperformance.
+Drawdown (%): 
+Visualizes the percentage decline from peak equity, illustrating the magnitude and duration of drawdowns, with a clear marker for the maximum drawdown.
+Rolling 12M Sharpe Ratio: 
+Displays the strategy's risk-adjusted returns over a 12-month rolling window, indicating consistency of performance.
+Rolling 3M Realized Vol:
+Shows the annualized standard deviation of daily returns over a 3-month rolling window, representing the strategy's short-term volatility.
+Return Distribution: 
+A histogram of daily returns, often overlaid with a normal distribution, to assess the normality and symmetry of returns.
+Monthly Returns: 
+A bar chart displaying monthly returns, color-coded to indicate positive (green) or negative (red) performance.
+Key Statistics: 
+A table summarizing essential performance metrics such as annual return, volatility, Sharpe ratio, maximum drawdown, alpha, beta, and more.
+Strategy vs Benchmark Scatter: 
+A scatter plot comparing daily returns of the strategy against the benchmark, often including a regression line to show their relationship.
+Q-Q Plot (Normal):
+A quantile-quantile plot comparing the distribution of strategy returns to a theoretical normal distribution, useful for identifying fat tails or skewness.
 
 
 
