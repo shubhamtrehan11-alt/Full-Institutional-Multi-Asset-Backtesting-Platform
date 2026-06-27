@@ -46,9 +46,13 @@ A quantile-quantile plot comparing the distribution of strategy returns to a the
 
 This plot presents a calendar-style heat map of monthly returns. Each cell represents a month, with colors indicating positive (green) or negative (red) performance. This visual allows for quick identification of strong and weak periods, as well as annual (YTD) performance.
 
+
+
 3. Sector Exposure Over Time
 
 This stacked area chart illustrates how the portfolio's allocation to different sectors changes over the backtesting period. It provides insights into thematic bets, concentration risks, and dynamic rebalancing strategies across sectors.
+
+
 
 4. Factor Information Coefficient (IC) Analysis
 
@@ -65,6 +69,7 @@ Displays the moving average of the IC, revealing trends in factor efficacy.
 **IC Distribution:** 
 
 A histogram of IC values, often used to calculate metrics like the Information Ratio (IR = mean IC / std IC).
+
 
 
 5. Transaction Cost Attribution
@@ -86,6 +91,7 @@ Visualizes the percentage of the portfolio traded during each rebalance.
 **Cumulative Transaction Cost Drag:**
 
 Displays the accumulated dollar cost of trading over the entire backtesting period, demonstrating the total impact of friction.
+
 
 
 6. Risk Analysis Dashboard
