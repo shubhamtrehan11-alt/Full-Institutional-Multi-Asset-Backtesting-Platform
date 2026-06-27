@@ -12,6 +12,9 @@ Strategy vs Benchmark Scatter: A scatter plot comparing daily returns of the str
 Q-Q Plot (Normal): A quantile-quantile plot comparing the distribution of strategy returns to a theoretical normal distribution, useful for identifying fat tails or skewness.
 
 
+
+
+
 2. Monthly Returns Heat Map
 This plot presents a calendar-style heat map of monthly returns. Each cell represents a month, with colors indicating positive (green) or negative (red) performance. This visual allows for quick identification of strong and weak periods, as well as annual (YTD) performance.
 
