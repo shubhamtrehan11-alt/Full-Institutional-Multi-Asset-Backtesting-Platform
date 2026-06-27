@@ -1,6 +1,5 @@
 1. Strategy Performance Tear Sheet
 This multi-panel plot offers a detailed look at the strategy's overall performance. It includes:
-
 Cumulative Portfolio Value vs Benchmark: Shows the growth of the strategy's equity curve against a chosen benchmark (e.g., SPY), highlighting periods of outperformance or underperformance.
 Drawdown (%): Visualizes the percentage decline from peak equity, illustrating the magnitude and duration of drawdowns, with a clear marker for the maximum drawdown.
 Rolling 12M Sharpe Ratio: Displays the strategy's risk-adjusted returns over a 12-month rolling window, indicating consistency of performance.
